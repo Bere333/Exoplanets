@@ -4,12 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700i&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fb38cdee50.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
     <title>Data</title>
 </head>
-<body>
-    <section id="root">
-        <div>hola</div>
-    </section>
+<body >
+    <article>
+        <nav class="navbar-home"  class="m-t m-l">
+            <div class="box-menu">
+                <ul class="list-menu">
+                    <li class="li-menu"><a href="#home"><i class="fas fa-globe-americas"></i> Inicio</a></li>
+                    <li class="li-menu"><a href="#search-data"><i class="fas fa-search"></i> Buscar exoplanetas</a></li>
+                    
+                </ul>
+            </div>
+        </nav>
+        <section id="home" class="m-t m-l section-data">
+                <div class="box-intro">
+                    <p class="text-intro">
+                        Los exoplanetas son planetas fuera del sistema solar,<br>
+                        que se encuentran a muchos años luz del planeta tierra. <br>
+                        Por cierto, los años luz son una unidad de medición de <br>
+                        distancia y no de tiempo.
+                        
+                    </p>
+                    <img src="./img/STSCI-H-p1807c-z-1000x753.png" alt="exoplanet" class="exoplanet-img">
+    
+                </div>
+            
+        </section>
+        <section id="search-data">
+            <button type="text" placeholder="Buscar exoplanetas" class="input-search"></button>
+            <div id="box-select">
+                <select name="" id="select-date">
+                    <option value="All">Año del CME</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option>
+                </select>
+                <select name="" id="select-speed">
+                    <option value="All">Velocidad del CME</option>
+                    <option value=200>200</option>
+                    <option value=300>300</option>
+                    <option value=400>400</option>
+                    <option value=500>500</option>
+                    <option value=600>600</option>
+                </select>
+                <select id="select-type">
+                    <option value="All">Tipo de CME</option>
+                    <option value="C">C</option>
+                    <option value="S">S</option>
+                </select>
+
+            </div>
+        </section>
+
+    </article>
     <script src="./main.js"></script>
 </body>
 </html>
